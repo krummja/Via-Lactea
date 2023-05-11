@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://xstbrbnxdvoe"
+path="res://.godot/imported/computeGalaxyPosition.glsl-3bc0927405b093d4908cba347db48b54.res"
+
+[deps]
+
+source_file="res://resources/compute/computeGalaxyPosition.glsl"
+dest_files=["res://.godot/imported/computeGalaxyPosition.glsl-3bc0927405b093d4908cba347db48b54.res"]
+
+[params]
+

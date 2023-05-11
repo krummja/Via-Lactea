@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://cywcptad8dnpx"]
+
+[ext_resource type="Script" path="res://scenes/world/galaxy/Galaxy.cs" id="1_oke5a"]
+[ext_resource type="PackedScene" uid="uid://deqoj32wqo3fe" path="res://assets/star_template.tscn" id="2_d53oh"]
+
+[node name="Galaxy" type="Node3D"]
+script = ExtResource("1_oke5a")
+StarTemplate = ExtResource("2_d53oh")

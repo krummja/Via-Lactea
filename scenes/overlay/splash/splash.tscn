@@ -1,0 +1,877 @@
+[gd_scene load_steps=23 format=3]
+
+[ext_resource type="Script" path="res://scenes/overlay/splash/SplashScreen.cs" id="1_v6reb"]
+[ext_resource type="Texture2D" uid="uid://denty8k0mtk63" path="res://resources/textures/splash/S.png" id="2_pqolj"]
+[ext_resource type="Texture2D" uid="uid://cifpwgudo0w8h" path="res://resources/textures/splash/I.png" id="3_va3w8"]
+[ext_resource type="Texture2D" uid="uid://clh2cglbc7s4" path="res://resources/textures/splash/M.png" id="4_bsbc6"]
+[ext_resource type="Texture2D" uid="uid://dc65kj40gaxal" path="res://resources/textures/splash/U.png" id="5_11yqb"]
+[ext_resource type="Texture2D" uid="uid://2xh5tupgdowx" path="res://resources/textures/splash/L.png" id="6_coqu3"]
+[ext_resource type="Texture2D" uid="uid://brs3fys6mt044" path="res://resources/textures/splash/A.png" id="7_kb33u"]
+[ext_resource type="Texture2D" uid="uid://c7e33di1nemb8" path="res://resources/textures/splash/C.png" id="8_qr2el"]
+[ext_resource type="Texture2D" uid="uid://dgtqhy55e3jiy" path="res://resources/textures/splash/R.png" id="9_kivlh"]
+[ext_resource type="Texture2D" uid="uid://cdyv6stkdvvyj" path="res://resources/textures/splash/logo_tl.png" id="10_vysft"]
+[ext_resource type="Texture2D" uid="uid://b2sy2o2xnbiwd" path="res://resources/textures/splash/logo_tr.png" id="11_8vhlf"]
+[ext_resource type="Texture2D" uid="uid://bp5e487lrevr1" path="res://resources/textures/splash/logo_bl.png" id="12_fyaey"]
+[ext_resource type="Texture2D" uid="uid://li7xjtpeyoyx" path="res://resources/textures/splash/logo_b.png" id="13_sj0l0"]
+[ext_resource type="Texture2D" uid="uid://4a31fpopujso" path="res://resources/textures/splash/logo_br.png" id="14_wb0u1"]
+
+[sub_resource type="Animation" id="Animation_e7pmo"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/logomark/LogoB:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/logomark/LogoB:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(31.5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/logomark/LogoBl:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-103, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/logomark/LogoBl:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(31.5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/logomark/LogoTl:position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-65, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/logomark/LogoTl:position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-27.5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/logomark/LogoTr:position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(65, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CanvasLayer/logomark/LogoTr:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-27.5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CanvasLayer/simulacrum/S:position:x")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-236.289, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CanvasLayer/simulacrum/S:position:y")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(452.548, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/10/type = "bezier"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("CanvasLayer/simulacrum/I:position:x")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-204.136, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/11/type = "bezier"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("CanvasLayer/simulacrum/I:position:y")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(452.548, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/12/type = "bezier"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CanvasLayer/simulacrum/M:position:x")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-165.898, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/13/type = "bezier"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CanvasLayer/simulacrum/M:position:y")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(452.548, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/14/type = "bezier"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("CanvasLayer/simulacrum/U:position:x")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-108.708, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/15/type = "bezier"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("CanvasLayer/simulacrum/U:position:y")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(452.548, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/16/type = "bezier"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("CanvasLayer/simulacrum/L:position:x")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-58.9216, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/17/type = "bezier"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("CanvasLayer/simulacrum/L:position:y")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(452.548, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/18/type = "bezier"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("CanvasLayer/simulacrum/A:position:x")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-8.47729, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/19/type = "bezier"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("CanvasLayer/simulacrum/A:position:y")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(452.548, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/20/type = "bezier"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("CanvasLayer/simulacrum/C:position:x")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(44.9431, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/21/type = "bezier"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("CanvasLayer/simulacrum/C:position:y")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(452.548, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/22/type = "bezier"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("CanvasLayer/simulacrum/R:position:x")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(100.149, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/23/type = "bezier"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("CanvasLayer/simulacrum/R:position:y")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(452.548, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/24/type = "bezier"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("CanvasLayer/simulacrum/U2:position:x")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(153.967, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/25/type = "bezier"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("CanvasLayer/simulacrum/U2:position:y")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(452.548, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/26/type = "bezier"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("CanvasLayer/simulacrum/M2:position:x")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(211.752, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/27/type = "bezier"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("CanvasLayer/simulacrum/M2:position:y")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(452.548, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_07ail"]
+resource_name = "simulacrum"
+length = 1.5
+step = 0.05
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/logomark/LogoBr:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1054.37, -0.25, 0, 0.588042, -11.8655, 103, -0.762397, 22.5, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/logomark/LogoBr:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-255.5, -0.25, 0, 0.626173, -31, 31.5, -0.554522, -2, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/logomark/LogoTl:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-477.724, -0.25, 0, 0.25, 0, -65, -0.833617, -12.5, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/logomark/LogoTl:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-576.741, -0.25, 0, 0.25, 0, -27.5, -0.688702, 7, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/logomark/LogoBl:position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(538.31, -0.25, 0, 0.25, 0, -103, -0.810359, 0.5, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/logomark/LogoBl:position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-565.363, -0.25, 0, 0.25, 0, 31.5, -0.824672, -3, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/logomark/LogoTr:position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(811.078, -0.25, 0, 0.25, 0, 65, -0.876554, -1.5, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CanvasLayer/logomark/LogoTr:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(842.396, -0.25, 0, 0.25, 0, -27.5, -0.609983, -1, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CanvasLayer/logomark/LogoB:position:x")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-673.058, -0.25, 0, 0.25, 0, 0, -0.847929, 0.5, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CanvasLayer/logomark/LogoB:position:y")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(764.879, -0.25, 0, 0.25, 0, 31.5, -0.82825, -1, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/10/type = "bezier"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("CanvasLayer/simulacrum/S:position:x")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-236.289, -0.25, 0, 0.25, 0, -236.289, -0.25, 0, 0.25, 0, -236.289, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.65, 1.5)
+}
+tracks/11/type = "bezier"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("CanvasLayer/simulacrum/S:position:y")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(662.8, -0.25, 0, 0.25, 0, 662.8, -0.25, 0, 0.25, 0, 0, -1.05397, -4.5, 0.25, 0),
+"times": PackedFloat32Array(0, 0.65, 1.5)
+}
+tracks/12/type = "bezier"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CanvasLayer/simulacrum/I:position:x")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-204.136, -0.25, 0, 0.25, 0, -204.136, -0.25, 0, 0.25, 0, -204.136, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.7, 1.5)
+}
+tracks/13/type = "bezier"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CanvasLayer/simulacrum/I:position:y")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(662.8, -0.25, 0, 0.25, 0, 662.8, -0.25, 0, 0.25, 0, 0, -0.972802, -2.5, 0.25, 0),
+"times": PackedFloat32Array(0, 0.7, 1.5)
+}
+tracks/14/type = "bezier"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("CanvasLayer/simulacrum/M:position:x")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-165.898, -0.25, 0, 0.25, 0, -165.898, -0.25, 0, 0.25, 0, -165.898, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.75, 1.5)
+}
+tracks/15/type = "bezier"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("CanvasLayer/simulacrum/M:position:y")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(662.8, -0.25, 0, 0.25, 0, 662.8, -0.25, 0, 0.25, 0, 0, -0.88223, -18.5, 0.25, 0),
+"times": PackedFloat32Array(0, 0.75, 1.5)
+}
+tracks/16/type = "bezier"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("CanvasLayer/simulacrum/U:position:x")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-108.708, -0.25, 0, 0.25, 0, -108.708, -0.25, 0, 0.25, 0, -108.708, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.8, 1.5)
+}
+tracks/17/type = "bezier"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("CanvasLayer/simulacrum/U:position:y")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(662.8, -0.25, 0, 0.25, 0, 662.8, -0.25, 0, 0.25, 0, 0, -0.820709, 1.5, 0.25, 0),
+"times": PackedFloat32Array(0, 0.8, 1.5)
+}
+tracks/18/type = "bezier"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("CanvasLayer/simulacrum/L:position:x")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-58.9216, -0.25, 0, 0.25, 0, -58.9216, -0.25, 0, 0.25, 0, -58.9216, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.85, 1.5)
+}
+tracks/19/type = "bezier"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("CanvasLayer/simulacrum/L:position:y")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(662.8, -0.25, 0, 0.25, 0, 662.8, -0.25, 0, 0.25, 0, 0, -0.754916, 8.5, 0.25, 0),
+"times": PackedFloat32Array(0, 0.85, 1.5)
+}
+tracks/20/type = "bezier"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("CanvasLayer/simulacrum/A:position:x")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-8.47729, -0.25, 0, 0.25, 0, -8.47729, -0.25, 0, 0.25, 0, -8.47729, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.9, 1.5)
+}
+tracks/21/type = "bezier"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("CanvasLayer/simulacrum/A:position:y")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(662.8, -0.25, 0, 0.25, 0, 662.8, -0.25, 0, 0.25, 0, 0, -0.692541, 2.5, 0.25, 0),
+"times": PackedFloat32Array(0, 0.9, 1.5)
+}
+tracks/22/type = "bezier"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("CanvasLayer/simulacrum/C:position:x")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(44.9431, -0.25, 0, 0.25, 0, 44.9431, -0.25, 0, 0.25, 0, 44.9431, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.95, 1.5)
+}
+tracks/23/type = "bezier"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("CanvasLayer/simulacrum/C:position:y")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(662.8, -0.25, 0, 0.25, 0, 662.8, -0.25, 0, 0.25, 0, 0, -0.666907, 3.5, 0.25, 0),
+"times": PackedFloat32Array(0, 0.95, 1.5)
+}
+tracks/24/type = "bezier"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("CanvasLayer/simulacrum/R:position:x")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(100.149, -0.25, 0, 0.25, 0, 100.149, -0.25, 0, 0.25, 0, 100.149, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1, 1.5)
+}
+tracks/25/type = "bezier"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("CanvasLayer/simulacrum/R:position:y")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(662.8, -0.25, 0, 0.25, 0, 662.8, -0.25, 0, 0.25, 0, 0, -0.619912, 5.5, 0.25, 0),
+"times": PackedFloat32Array(0, 1, 1.5)
+}
+tracks/26/type = "bezier"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("CanvasLayer/simulacrum/U2:position:x")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(153.967, -0.25, 0, 0.25, 0, 153.967, -0.25, 0, 0.25, 0, 153.967, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1.05, 1.5)
+}
+tracks/27/type = "bezier"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("CanvasLayer/simulacrum/U2:position:y")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(662.8, -0.25, 0, 0.25, 0, 662.8, -0.25, 0, 0.25, 0, 0, -0.588298, 0.5, 0.25, 0),
+"times": PackedFloat32Array(0, 1.05, 1.5)
+}
+tracks/28/type = "bezier"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("CanvasLayer/simulacrum/M2:position:x")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(211.752, -0.25, 0, 0.25, 0, 211.752, -0.25, 0, 0.25, 0, 211.752, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1.1, 1.5)
+}
+tracks/29/type = "bezier"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("CanvasLayer/simulacrum/M2:position:y")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(662.8, -0.25, 0, 0.25, 0, 662.8, -0.25, 0, 0.25, 0, 0, -0.536176, 5.5, 0.25, 0),
+"times": PackedFloat32Array(0, 1.1, 1.5)
+}
+
+[sub_resource type="Animation" id="Animation_v8gvr"]
+resource_name = "simulacrum_ca"
+length = 2.0
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2e2f1"]
+_data = {
+"RESET": SubResource("Animation_e7pmo"),
+"simulacrum": SubResource("Animation_07ail"),
+"simulacrum_ca": SubResource("Animation_v8gvr")
+}
+
+[sub_resource type="Animation" id="Animation_s86hb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Fade:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.0235294, 0.0235294, 0.0235294, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_55pk5"]
+resource_name = "fade_in"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Fade:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0.0235294, 0.0235294, 0.0235294, 0), Color(0.0235294, 0.0235294, 0.0235294, 0), Color(0.0235294, 0.0235294, 0.0235294, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3s24a"]
+_data = {
+"RESET": SubResource("Animation_s86hb"),
+"fade_in": SubResource("Animation_55pk5")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_pvb7e"]
+font_color = Color(1, 0, 0, 1)
+
+[node name="SplashScreen" type="Control" node_paths=PackedStringArray("LogoAnimator", "TransitionAnimator", "Debug")]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v6reb")
+LogoAnimator = NodePath("LogoAnimator")
+TransitionAnimator = NodePath("TransitionAnimator")
+Debug = NodePath("CanvasLayer/DEBUG")
+
+[node name="LogoAnimator" type="AnimationPlayer" parent="."]
+reset_on_save = false
+libraries = {
+"": SubResource("AnimationLibrary_2e2f1")
+}
+
+[node name="TransitionAnimator" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_3s24a")
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Background" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0235294, 0.0235294, 0.0235294, 1)
+
+[node name="simulacrum" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -5.0
+offset_top = 45.241
+offset_right = -5.0
+offset_bottom = 45.241
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="S" type="Sprite2D" parent="CanvasLayer/simulacrum"]
+position = Vector2(-236.289, 452.548)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_pqolj")
+
+[node name="I" type="Sprite2D" parent="CanvasLayer/simulacrum"]
+position = Vector2(-204.136, 452.548)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_va3w8")
+
+[node name="M" type="Sprite2D" parent="CanvasLayer/simulacrum"]
+position = Vector2(-165.898, 452.548)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_bsbc6")
+
+[node name="U" type="Sprite2D" parent="CanvasLayer/simulacrum"]
+position = Vector2(-108.708, 452.548)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("5_11yqb")
+
+[node name="L" type="Sprite2D" parent="CanvasLayer/simulacrum"]
+position = Vector2(-58.9216, 452.548)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("6_coqu3")
+
+[node name="A" type="Sprite2D" parent="CanvasLayer/simulacrum"]
+position = Vector2(-8.47729, 452.548)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("7_kb33u")
+
+[node name="C" type="Sprite2D" parent="CanvasLayer/simulacrum"]
+position = Vector2(44.9431, 452.548)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("8_qr2el")
+
+[node name="R" type="Sprite2D" parent="CanvasLayer/simulacrum"]
+position = Vector2(100.149, 452.548)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("9_kivlh")
+
+[node name="U2" type="Sprite2D" parent="CanvasLayer/simulacrum"]
+position = Vector2(153.967, 452.548)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("5_11yqb")
+
+[node name="M2" type="Sprite2D" parent="CanvasLayer/simulacrum"]
+position = Vector2(211.752, 452.548)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_bsbc6")
+
+[node name="logomark" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -5.0
+offset_top = -72.759
+offset_right = -5.0
+offset_bottom = -72.759
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="LogoTl" type="Sprite2D" parent="CanvasLayer/logomark"]
+position = Vector2(-65, -27.5)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("10_vysft")
+
+[node name="LogoTr" type="Sprite2D" parent="CanvasLayer/logomark"]
+position = Vector2(65, -27.5)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("11_8vhlf")
+
+[node name="LogoBl" type="Sprite2D" parent="CanvasLayer/logomark"]
+position = Vector2(-103, 31.5)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("12_fyaey")
+
+[node name="LogoB" type="Sprite2D" parent="CanvasLayer/logomark"]
+position = Vector2(0, 31.5)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("13_sj0l0")
+
+[node name="LogoBr" type="Sprite2D" parent="CanvasLayer/logomark"]
+position = Vector2(1054.37, -255.5)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("14_wb0u1")
+
+[node name="Fade" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0235294, 0.0235294, 0.0235294, 0)
+
+[node name="DEBUG" type="Label" parent="CanvasLayer"]
+visible = false
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -121.0
+offset_right = 120.0
+offset_bottom = 37.0
+grow_horizontal = 2
+text = "DEBUG"
+label_settings = SubResource("LabelSettings_pvb7e")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true

@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3]
+
+[ext_resource type="Shader" path="res://assets/star/starburst.gdshader" id="1_l4mth"]
+
+[resource]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("1_l4mth")
+shader_parameter/star_color = Color(1, 1, 1, 1)
+shader_parameter/glow_power = 0.1
+shader_parameter/corona = 0.2
+shader_parameter/fade = -0.768
+shader_parameter/scale = 1.959
+shader_parameter/vert_scale = 0.993
+shader_parameter/diffusion_hardness = 0.395

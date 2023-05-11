@@ -1,0 +1,70 @@
+[gd_scene load_steps=4 format=3 uid="uid://ncg1pe0kut6c"]
+
+[ext_resource type="Script" path="res://scenes/_debug/DebugPanel.cs" id="1_mvoy7"]
+[ext_resource type="PackedScene" uid="uid://3cdfky8e15b8" path="res://scenes/_debug/field.tscn" id="2_v36wo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1fcaf"]
+bg_color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="DebugPanel" type="MarginContainer" node_paths=PackedStringArray("PositionField", "VelocityField")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 800
+theme_override_constants/margin_top = 400
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+script = ExtResource("1_mvoy7")
+PositionField = NodePath("RowsContainer/Position")
+VelocityField = NodePath("RowsContainer/Velocity")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1fcaf")
+
+[node name="RowsContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = -11
+
+[node name="Position" parent="RowsContainer" instance=ExtResource("2_v36wo")]
+layout_mode = 2
+
+[node name="Property" parent="RowsContainer/Position/PropertyMargin" index="0"]
+text = "Position"
+
+[node name="Value" parent="RowsContainer/Position/ValueMargin" index="1"]
+text = ""
+
+[node name="Velocity" parent="RowsContainer" instance=ExtResource("2_v36wo")]
+layout_mode = 2
+
+[node name="Property" parent="RowsContainer/Velocity/PropertyMargin" index="0"]
+text = "Velocity"
+
+[node name="Value" parent="RowsContainer/Velocity/ValueMargin" index="1"]
+text = ""
+
+[node name="Field3" parent="RowsContainer" instance=ExtResource("2_v36wo")]
+visible = false
+layout_mode = 2
+
+[node name="Field4" parent="RowsContainer" instance=ExtResource("2_v36wo")]
+visible = false
+layout_mode = 2
+
+[node name="Field5" parent="RowsContainer" instance=ExtResource("2_v36wo")]
+visible = false
+layout_mode = 2
+
+[node name="Field6" parent="RowsContainer" instance=ExtResource("2_v36wo")]
+visible = false
+layout_mode = 2
+
+[node name="Field7" parent="RowsContainer" instance=ExtResource("2_v36wo")]
+visible = false
+layout_mode = 2
+
+[editable path="RowsContainer/Position"]
+[editable path="RowsContainer/Velocity"]

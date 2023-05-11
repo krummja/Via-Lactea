@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://daiuyyo7msbc3"]
+
+[ext_resource type="Material" path="res://assets/star/m_starburst.tres" id="1_dnpwg"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_sa4tq"]
+
+[node name="StarTemplate" type="Node3D"]
+
+[node name="StarSprite" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_dnpwg")
+cast_shadow = 0
+lod_bias = 0.001
+gi_mode = 0
+mesh = SubResource("QuadMesh_sa4tq")

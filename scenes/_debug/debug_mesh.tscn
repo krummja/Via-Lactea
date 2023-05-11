@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfxtpd6sajvjv"]
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_2luh5"]
+
+[node name="DebugMesh" type="MeshInstance3D"]
+mesh = SubResource("ImmediateMesh_2luh5")

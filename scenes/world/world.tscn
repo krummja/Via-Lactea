@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://pp165ie0oetb"]
+
+[ext_resource type="PackedScene" uid="uid://ctdto74nbrh74" path="res://environments/space_environment.tscn" id="1_1g8cg"]
+[ext_resource type="PackedScene" uid="uid://cywcptad8dnpx" path="res://scenes/world/galaxy/galaxy.tscn" id="1_k35k7"]
+[ext_resource type="Script" path="res://addons/Simple Free-Look Camera/camera.gd" id="2_e13xs"]
+[ext_resource type="Environment" uid="uid://ctrdcrlgrv1eu" path="res://environments/space_environment.tres" id="2_ryudi"]
+
+[node name="World" type="Node3D"]
+
+[node name="SpaceEnvironment" parent="." instance=ExtResource("1_1g8cg")]
+environment = ExtResource("2_ryudi")
+
+[node name="Galaxy" parent="." instance=ExtResource("1_k35k7")]
+Size = 2000
+MinimumArms = 5
+ClusterCountDeviation = 0.863
+MinArmClusterScale = 0.009
+MaxArmClusterScale = 0.05
+CenterClusterScale = 0.364
+CenterClusterCountMean = 0.167
+StarSizeDeviation = 0.653
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.02205, 58.396)
+current = true
+fov = 37.8493
+script = ExtResource("2_e13xs")
+max_multiplier = 50

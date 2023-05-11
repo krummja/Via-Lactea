@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://df66d07s5ycae"
+path="res://.godot/imported/star_lowpoly.obj-e9e7862480dbf12b2830c648bb0be91e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/star_lowpoly.obj-e9e7862480dbf12b2830c648bb0be91e.mesh"]
+
+source_file="res://resources/models/star_lowpoly.obj"
+dest_files=["res://.godot/imported/star_lowpoly.obj-e9e7862480dbf12b2830c648bb0be91e.mesh", "res://.godot/imported/star_lowpoly.obj-e9e7862480dbf12b2830c648bb0be91e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

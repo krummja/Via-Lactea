@@ -1,0 +1,28 @@
+[gd_scene load_steps=9 format=3 uid="uid://bimeh4pp55qx"]
+
+[ext_resource type="Script" path="res://scenes/Main.cs" id="1_yc4hm"]
+[ext_resource type="PackedScene" path="res://scenes/director.tscn" id="2_2rkjd"]
+[ext_resource type="PackedScene" uid="uid://v3n7fj661k3j" path="res://scenes/world/world.tscn" id="3_6wglw"]
+[ext_resource type="PackedScene" path="res://scenes/overlay/splash/splash.tscn" id="3_dddcq"]
+[ext_resource type="PackedScene" uid="uid://cohcdilqto07q" path="res://scenes/overlay/overlay.tscn" id="4_tere0"]
+[ext_resource type="PackedScene" path="res://scenes/overlay/loading/loading.tscn" id="4_v2og5"]
+[ext_resource type="PackedScene" uid="uid://cv8r8ak14pvev" path="res://scenes/overlay/main_menu/main_menu.tscn" id="5_gxtry"]
+[ext_resource type="PackedScene" uid="uid://dme2g1i4fhqai" path="res://scenes/overlay/pause_menu/pause_menu.tscn" id="6_xdoqd"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_yc4hm")
+
+[node name="Director" parent="." instance=ExtResource("2_2rkjd")]
+ScenePaths = [ExtResource("3_dddcq"), ExtResource("4_v2og5"), ExtResource("5_gxtry"), ExtResource("6_xdoqd")]
+
+[node name="World" parent="." instance=ExtResource("3_6wglw")]
+
+[node name="Overlay" parent="." instance=ExtResource("4_tere0")]
+
+[node name="DebugPanel" parent="Overlay" index="0" node_paths=PackedStringArray("PlayerRoot")]
+PlayerRoot = NodePath("../../World/Camera3D")
+
+[editable path="World"]
+[editable path="Overlay"]
+[editable path="Overlay/DebugPanel/RowsContainer/Position"]
+[editable path="Overlay/DebugPanel/RowsContainer/Velocity"]
